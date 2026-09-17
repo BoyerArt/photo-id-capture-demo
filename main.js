@@ -122277,7 +122277,16 @@ If this is intentional, you can suppress this warning by passing the \`suppressC
 
   // main.tsx
   var import_jsx_runtime384 = __toESM(require_jsx_runtime());
-  var theme = themeBuilder();
+  var theme = themeBuilder({
+    isWhiteLabelActive: true,
+    primaryColor: "#ED4724",
+    primaryColorLighter: "#F3826A",
+    primaryColorDarker: "#B4361B",
+    secondaryColor: "#FAAF43",
+    secondaryColorLighter: "#FCC97F",
+    secondaryColorDarker: "#BE8533",
+    tertiaryColor: "#F37732"
+  });
   var noop13 = () => void 0;
   var CLINIC_LOGO = "data:image/svg+xml;utf8," + encodeURIComponent(
     "<svg xmlns='http://www.w3.org/2000/svg' width='200' height='32' viewBox='0 0 200 32'><circle cx='16' cy='16' r='12' fill='#7715B7'/><path d='M16 9.5v13M9.5 16h13' stroke='#fff' stroke-width='2.5' stroke-linecap='round'/><text x='38' y='21' font-family='Poppins, Archivo, sans-serif' font-size='15' fill='#262626'>Riverside Health</text></svg>"
@@ -122408,8 +122417,8 @@ If this is intentional, you can suppress this warning by passing the \`suppressC
       header: /* @__PURE__ */ (0, import_jsx_runtime384.jsx)(
         PatientFormBrandHeader,
         {
-          logoSrc: CLINIC_LOGO,
-          brandName: "Riverside Health",
+          logoSrc: "https://artera-branded-rcs-images-9573.twil.io/Hanger-SmallLogov2.png",
+          brandName: "Hanger Clinic",
           action: { icon: "xmark", ariaLabel: "Exit form", onClick: noop13 }
         }
       ),
